@@ -1,0 +1,20 @@
+{
+    "emojis": {
+        "start": "✨ ",
+        "test": "🚥 ",
+        "build": "🔨 ",
+        "deploy": "🚀 ",
+        "eject": "📼 ",
+        "storybook": "📚",
+        "lint": "❗️ ",
+        "package": "📦 ",
+        "clean": "🧹 ",
+        "link": "🔗 ",
+        "andoid": "📱 ",
+        "ios": "📱 ",
+        "encrypt": "🔐 ",
+        "decrypt": "🔓 ",
+        "stats": "🎛 "
+    },
+    "default": "⏩ "
+}
