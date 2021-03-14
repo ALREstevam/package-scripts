@@ -75,13 +75,3 @@ If you want to use `npm run` instead of `yarn`, you can use:
     "runCommand": "run" // The command used to run the aliases on `package.json`
 }
 ```
-
-## Installing
-
-Currently this code should me manually installed:
-
-1. Add `package-sripts.py`, `emojist.json` and `config.json` to your preferred directory that is included in the `PATH`.
-
-2. Rename `package-scripts.py` to `package-scripts` or a name of your preference. The name of this file will be the command executed on the command line.
-
-3. Give run permissions to the file via `chmod +x package-scripts`
