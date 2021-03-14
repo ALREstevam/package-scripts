@@ -10,8 +10,8 @@ import inquirer
 import subprocess
 from inquirer.themes import GreenPassion
 import pyperclip
-from colorama import init
-init()
+from colorama import init as init_colorama
+init_colorama()
 
 customdecoder = JSONDecoder(object_pairs_hook=OrderedDict)
 
@@ -73,11 +73,10 @@ if os.path.isfile(file_path):
 
         elif "-r" in sys.argv or "--raw" in sys.argv:
             print(json.dumps(list(zip(
-                list(map(lambda script: f'{base_run_command} {script}' ,scripts)), commands))))
+                list(map(lambda script: f'{base_run_command} {script}', scripts)), commands))))
 
         else:
             try:
-                # Inquirer
                 inquirerQuestions = [inquirer.List(
                     'Script',  message="Script to run", choices=questions)]
 
@@ -87,7 +86,7 @@ if os.path.isfile(file_path):
                 index = questions.index(answers['Script'])
 
                 print('')
-                print('> Complete the arguments if needed then hit enter:')
+                print('> Complete the arguments if needed and then hit enter:')
                 print('')
 
                 params = input(
